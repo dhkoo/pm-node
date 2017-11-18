@@ -5,7 +5,7 @@ if [ $# -ne 1 ]; then
 	exit 1
 fi
 
-target="/dev/nvme0n1"
+target="/dev/nvme2n1"
 
 if [ $1 = r ]; then
 	read -p "filename : " name
