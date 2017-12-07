@@ -8,6 +8,7 @@ if [ $# -ne 1 ]; then
 fi
 
 if [ $1 -eq 1 ]; then
+	#sudo beeond start -n nodefile -d /mnt/953 -c /mnt/beeond -f /etc/beegfs/beegfs-client.conf -P -x
 	sudo beeond start -n nodefile -d /mnt/953 -c /mnt/beeond -x
 elif [ $1 -eq 2 ]; then
 	sudo beeond stop -n nodefile -L -d

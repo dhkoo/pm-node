@@ -1,0 +1,24 @@
+ ;-- start job file --
+[global]
+#filename=/dev/nvme0n1
+directory=/mnt/beeond
+direct=1
+#buffered=1
+iodepth=16
+#ioengine=mmap
+#ioengine=libaio
+ioengine=psync
+#ioengine=posixaio
+time_based
+file_service_type=random
+#runtime=10
+fsync_on_close=1
+group_reporting
+
+
+[io3]
+size=512m
+bs=1m
+rw=write
+fadvise_stream=0
+numjobs=1
